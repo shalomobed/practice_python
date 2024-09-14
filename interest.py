@@ -1,0 +1,5 @@
+principal = int(input("Please enter the original loan amount: "))
+term = int(input("Please enter the length of the loan in months: "))
+rate = float(input("Please enter the annual interest rate of the loan in decimal: "))
+amount = str((principal * (1+(rate/12))**term)- principal)
+print ("The amount of interest in this loan is $"+amount)
